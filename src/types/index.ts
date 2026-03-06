@@ -17,7 +17,8 @@ export interface Project {
 
 export interface SkillCategory {
   category: string;
-  items: string[];
+  icon?: string;
+  items: { name: string; icon?: string }[];
 }
 
 export interface PersonalInfo {
@@ -26,5 +27,5 @@ export interface PersonalInfo {
   email: string;
   linkedin: string;
   github: string;
-  portfolio: string;
+  cellphone: string;
 }
