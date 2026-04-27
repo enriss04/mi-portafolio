@@ -1,15 +1,16 @@
 services:
-  next-portafolio:
+  frontend-next:
+    container_name: portafolio-enrique-frontend-container
+    image: portafolio-enrique-frontend-image:v1.0
     build:
       context: .
       dockerfile: dockerfile
-    container_name: portafolio-enrique
     ports:
-      - "7000:3000"
+      - "3002:3000"
     restart: always
     networks:
-      - net-tecnomex
+      - nginx-network
 
 networks:
-  net-tecnomex:
+  nginx-network:
     external: true
