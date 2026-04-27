@@ -1,3 +1,5 @@
+name: miportafolio-frontend-proyect
+
 services:
   frontend-next:
     container_name: portafolio-enrique-frontend-container
